@@ -1,0 +1,34 @@
+<template v-for="(lst,index) in ProdList">
+    <div class="col-xs-12" v-if="lst.isBanner == true" :id="'Bn' + index">
+    	<a :href="lst.Url" :title="lst.ProdName" target="_blank">
+    	 <picture>
+                
+                <source :srcset="lst.Img" media="(min-width: 1200px)">
+                <source :srcset="lst.ProdImageM" media="(max-width: 992px)">
+                
+                <img :src="lst.Img" :alt="lst.ProdName" class="img-responsive">
+            </picture>
+    	</a>
+    </div>
+    <div class="col-xs-6 col-md-3 col-lg-1-5 p-lst" v-else>
+    	<a :href="lst.Url" :title="lst.ProdName" class="ProdList-a" target="_blank">
+    		<img :src="lst.Img" :alt="lst.ProdName" class="img-responsive">
+            <div class="inner">            
+                <del v-if="lst.SpicalPrice<lst.Saveprice">
+                    ${{lst.Saveprice}}
+                </del>
+                <span class="sPrice" v-if="lst.SpicalPrice=='1'">
+                    <b>秘密價</b>
+                </span>
+                <span class="sPrice" v-else-if="lst.SpicalPrice=='2'">
+                    <b>門市獨享價</b>
+                </span>
+                <span class="sPrice" v-else>
+                    <b>${{lst.SpicalPrice}}</b>
+                </span>
+                <strong>{{lst.memo}}</strong>
+                <h2 class="pName">{{lst.ProdName}}</h2>
+            </div>
+    	</a>
+    </div>
+</template>

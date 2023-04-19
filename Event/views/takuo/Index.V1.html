@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>改造計畫 良興x曼都</title>
+    <link rel="icon" type="image/svg+xml" href="/Slogo.svg"/>
+    <link
+      href="https://img.eclife.com.tw/EDM/Structure.min.V1.css"
+      rel="stylesheet"
+    />
+    <link href="../takuo/css/Event.V1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="/Event/js/jquery.min.js"></script>
+    <script src="/Event/js/bootstrap.min.js"></script>
+    <script src="/Event/js/vue.js"></script>
+    <div id="lsdv" v-cloak>
+      <div class="container-fruid">
+        <!-- 刊頭 -->
+        <div class="col-xs-12 EDM"> 
+          <div class="col-xs-12 ec-logo">
+            <div class="col-xs-12 logo-well">
+              <a href="https://www.eclife.com.tw/" class="logo-a">
+                <img
+                  src="https://img.eclife.com.tw/EDM/11008/takuo202108/logo.png"
+                  alt="EcLife"
+                  class="img-responsive"
+                />
+              </a>
+              <a
+                href="./Index.V1.html"
+                target="_blank"
+                class="link-a hidden-xs"
+                >修眼計畫</a
+              >
+              <a
+                href="./Index.V1.html"
+                target="_blank"
+                class="link-a hidden-xs"
+                >修腦計畫</a
+              >
+              <a
+                href="./Index.V1.html"
+                target="_blank"
+                class="link-a hidden-xs"
+                >修指計畫</a
+              >
+              <a
+                href="./Game.html"
+                target="_blank"
+                class="link-a hidden-xs"
+                >立即領購物金</a
+              >
+            </div>
+          </div>
+          <div class="col-xs-12 EDM" data-name="EDM">
+            <div class="col-xs-12">
+              <div class="col-xs-12 TopBg">
+                <div class="container bd">
+                  <div class="col-xs-12 col-md-4 col-md-push-4 title">
+                    <a
+                      href="https://www.eclife.com.tw/EDM/Cont5987.htm"
+                      target="_blank"
+                      class="col-xs-12 title-a"
+                    >
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_tt.gif
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_tt.gif
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_tt.gif"
+                          class="img-responsive"
+                          alt="良興改造計畫"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-md-4 col-md-pull-4 top-pro">
+                    <a
+                      href="https://www.eclife.com.tw/keyboard/moreinfo_170942.htm"
+                      target="_blank"
+                      class="col-xs-12 Top-a"
+                    >
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_ProL-01.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_ProL-01.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_ProL-01.png"
+                          class="img-responsive"
+                          alt="CHERRY MX 櫻桃 BOARD 3.0S RGB 機械鍵盤 白 茶軸"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-md-4 top-pro">
+                    <a
+                      href="https://www.eclife.com.tw/pc_nb/moreinfo_138217.htm"
+                      target="_blank"
+                      class="col-xs-12 Top-a"
+                    >
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_ProR-02.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_ProR-02.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_ProR-02.png"
+                          class="img-responsive"
+                          alt="BENQ EW3270U 32型 真4K HDR舒視屏護眼螢幕"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 CanvasBg">
+                <div class="container bd">
+                  <a
+                    href="https://www.eclife.com.tw/MonthEvent/takuo202108-02"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 item-a"
+                  >
+                    <picture>
+                      <source
+                        srcset="
+                          https://img.eclife.com.tw/EDM/11008/takuo202108/index_item-01.png
+                        "
+                        media="(min-width: 1023px)"
+                      />
+                      <source
+                        srcset="
+                          https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_item-01.png
+                        "
+                        media="(max-width: 1023px)"
+                      />
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_item-01.png"
+                        class="img-responsive"
+                        alt="修眼"
+                      />
+                    </picture>
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/MonthEvent/takuo202108-04"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 item-a"
+                  >
+                    <picture>
+                      <source
+                        srcset="
+                          https://img.eclife.com.tw/EDM/11008/takuo202108/index_item-02.png
+                        "
+                        media="(min-width: 1023px)"
+                      />
+                      <source
+                        srcset="
+                          https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_item-02.png
+                        "
+                        media="(max-width: 1023px)"
+                      />
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_item-02.png"
+                        class="img-responsive"
+                        alt="修指"
+                      />
+                    </picture>
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/MonthEvent/takuo202108-03"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 item-a"
+                  >
+                    <picture>
+                      <source
+                        srcset="
+                          https://img.eclife.com.tw/EDM/11008/takuo202108/index_item-03.png
+                        "
+                        media="(min-width: 1023px)"
+                      />
+                      <source
+                        srcset="
+                          https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_item-03.png
+                        "
+                        media="(max-width: 1023px)"
+                      />
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_item-03.png"
+                        class="img-responsive"
+                        alt="修腦"
+                      />
+                    </picture>
+                  </a>
+                  <a
+                    href="./Game.html"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 item-a"
+                  >
+                    <picture>
+                      <source
+                        srcset="
+                          https://img.eclife.com.tw/EDM/11008/takuo202108/index_item-04.png
+                        "
+                        media="(min-width: 1023px)"
+                      />
+                      <source
+                        srcset="
+                          https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_item-04.png
+                        "
+                        media="(max-width: 1023px)"
+                      />
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_item-04.png"
+                        class="img-responsive"
+                        alt="大輪盤"
+                      />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 LogoArea">
+              <div class="container bd">
+                <div class="row">
+                  <a
+                    href="https://www.eclife.com.tw/product/brand/CHERRY/"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 logoArea-a"
+                  >
+                    <div class="col-xs-12 logoUP">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_01.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_01.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_01.png"
+                          class="img-responsive"
+                          alt="logoUP"
+                        />
+                      </picture>
+                    </div>
+                    <div class="col-xs-12 logoDOWN">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_01-hover.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_01.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_01-hover.png"
+                          class="img-responsive"
+                          alt="logoDOWN"
+                        />
+                      </picture>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/product/brand/steelseries"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 logoArea-a"
+                  >
+                    <div class="col-xs-12 logoUP">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_02.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_02.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_02.png"
+                          class="img-responsive"
+                          alt="logoUP"
+                        />
+                      </picture>
+                    </div>
+                    <div class="col-xs-12 logoDOWN">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_02-hover.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_02.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_02-hover.png"
+                          class="img-responsive"
+                          alt="logoDOWN"
+                        />
+                      </picture>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/product/brand/LINKSYS"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 logoArea-a"
+                  >
+                    <div class="col-xs-12 logoUP">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_03.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_03.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_03.png"
+                          class="img-responsive"
+                          alt="logoUP"
+                        />
+                      </picture>
+                    </div>
+                    <div class="col-xs-12 logoDOWN">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_03-hover.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_03.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_03-hover.png"
+                          class="img-responsive"
+                          alt="logoDOWN"
+                        />
+                      </picture>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/MonthEvent/2021ASUSROG"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 logoArea-a"
+                  >
+                    <div class="col-xs-12 logoUP">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_04.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_04.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_04.png"
+                          class="img-responsive"
+                          alt="logoUP"
+                        />
+                      </picture>
+                    </div>
+                    <div class="col-xs-12 logoDOWN">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_04-hover.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_04.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_04-hover.png"
+                          class="img-responsive"
+                          alt="logoDOWN"
+                        />
+                      </picture>
+                    </div>
+                  </a>
+                </div>
+                <div class="row">
+                  <a
+                    href="https://www.eclife.com.tw/product/brand/ASUS/1212060006/0908260001/"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 logoArea-a"
+                  >
+                    <div class="col-xs-12 logoUP">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_05.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_05.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_05.png"
+                          class="img-responsive"
+                          alt="logoUP"
+                        />
+                      </picture>
+                    </div>
+                    <div class="col-xs-12 logoDOWN">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_05-hover.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_05.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_05-hover.png"
+                          class="img-responsive"
+                          alt="logoDOWN"
+                        />
+                      </picture>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/MonthEvent/2021MSINBPC"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 logoArea-a"
+                  >
+                    <div class="col-xs-12 logoUP">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_06.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_06.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_06.png"
+                          class="img-responsive"
+                          alt="logoUP"
+                        />
+                      </picture>
+                    </div>
+                    <div class="col-xs-12 logoDOWN">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_06-hover.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_06.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_06-hover.png"
+                          class="img-responsive"
+                          alt="logoDOWN"
+                        />
+                      </picture>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/MonthEvent/BrandLogi"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 logoArea-a"
+                  >
+                    <div class="col-xs-12 logoUP">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_07.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_07.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_07.png"
+                          class="img-responsive"
+                          alt="logoUP"
+                        />
+                      </picture>
+                    </div>
+                    <div class="col-xs-12 logoDOWN">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_07-hover.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_07.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_07-hover.png"
+                          class="img-responsive"
+                          alt="logoDOWN"
+                        />
+                      </picture>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/MonthEvent/RazerProSe"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 logoArea-a"
+                  >
+                    <div class="col-xs-12 logoUP">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_08.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_08.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_08.png"
+                          class="img-responsive"
+                          alt="logoUP"
+                        />
+                      </picture>
+                    </div>
+                    <div class="col-xs-12 logoDOWN">
+                      <picture>
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_08-hover.png
+                          "
+                          media="(min-width: 1023px)"
+                        />
+                        <source
+                          srcset="
+                            https://img.eclife.com.tw/EDM/11008/takuo202108/index-m_logoUP_08.png
+                          "
+                          media="(max-width: 1023px)"
+                        />
+                        <img
+                          src="https://img.eclife.com.tw/EDM/11008/takuo202108/index_logoUP_08-hover.png"
+                          class="img-responsive"
+                          alt="logoDOWN"
+                        />
+                      </picture>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fr-fix">
+            <div class="hidden-xs frImg">
+              <a
+                href="./Game.html"
+                target="_blank"
+              >
+                <img
+                  src="https://img.eclife.com.tw/EDM/11008/takuo202108/fr.gif"
+                  alt="改造大輪盤"
+                  class="img-responsive"
+                />
+              </a>
+            </div>
+            <div class="hidden-xs fr-inner">
+              <a
+                href="https://www.eclife.com.tw/MonthEvent/201811member?MRID=1071128&coid=ecedm"
+                target="_blank"
+                class="fr-a"
+                >遊戲闖關拿紅利</a
+              >
+              <a
+                href="https://www.eclife.com.tw/EDM/Cont1653.htm?MRID=1071128&coid=ecedmm"
+                target="_blank"
+                class="fr-a"
+                >刷卡優惠</a
+              >
+              <a
+                href="https://www.eclife.com.tw/keyboard/moreinfo_144486.htm?MRID=1071128&coid=ecedm"
+                target="_blank"
+                class="fr-a"
+                >出國神隊友</a
+              >
+              <a
+                href="https://www.eclife.com.tw/EDM/Cont4652.htm?MRID=1071128&coid=ecedm"
+                target="_blank"
+                class="fr-a"
+                >除舊佈新</a
+              >
+              <a
+                href="https://www.eclife.com.tw/EDM/Cont4653.htm?MRID=1071128&coid=ecedm"
+                target="_blank"
+                class="fr-a"
+                >聖誕交換禮物</a
+              >
+              <a
+                href="https://www.eclife.com.tw/EDM/Cont4663.htm?MRID=1071128&coid=ecedm"
+                target="_blank"
+                class="fr-a"
+                >工具4起</a
+              >
+              <div class="GoTop" style="display: none">
+                △<br /><span>TOP</span>
+              </div>
+            </div>
+            <!--  GoTop效果寫在架構上了-->
+          </div>
+        </div>
+        <!-- 產品 -->
+        <div class="col-xs-12 ProdList">
+          <div class="container">
+            <div v-for="(lst,index) in ProdList">
+              <div
+                class="col-xs-12"
+                v-if="lst.isBanner == 'true'"
+                :id="'Bn' + index"
+              >
+                <a :href="lst.Url" :title="lst.ProdName" target="_blank">
+                  <picture>
+                    <source :srcset="lst.Img" media="(min-width: 1200px)" />
+                    <source
+                      :srcset="lst.ProdImageM"
+                      media="(max-width: 992px)"
+                    />
+
+                    <img
+                      :src="lst.Img"
+                      :alt="lst.ProdName"
+                      class="img-responsive"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-3 col-lg-1-5 p-lst" v-else>
+                <a
+                  :href="lst.Url"
+                  :title="lst.ProdName"
+                  class="ProdList-a"
+                  target="_blank"
+                >
+                  <img
+                    :src="lst.Img"
+                    :alt="lst.ProdName"
+                    class="img-responsive"
+                  />
+                  <div class="inner">
+                    <del v-if="lst.SpicalPrice<lst.Saveprice">
+                      ${{lst.Saveprice}}
+                    </del>
+                    <span class="sPrice" v-if="lst.SpicalPrice=='1'">
+                      <b>秘密價</b>
+                    </span>
+                    <span class="sPrice" v-else-if="lst.SpicalPrice=='2'">
+                      <b>門市獨享價</b>
+                    </span>
+                    <span class="sPrice" v-else>
+                      <b>${{lst.SpicalPrice}}</b>
+                    </span>
+                    <strong>{{lst.memo}}</strong>
+                    <h2 class="pName">{{lst.ProdName}}</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- VUE 產品排排站-->
+    <script src="/Event/js/Index.V1.js"></script>
+  </body>
+</html>

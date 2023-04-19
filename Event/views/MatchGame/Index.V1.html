@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDM</title>
+    <link rel="icon" type="image/svg+xml" href="/Slogo.svg"/>
+    <link
+      href="https://www.eclife.com.tw/web/css/flexslider.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="/Event/js/jquery.flexslider.js"></script>
+    <script src="/Event/js/jquery.min.js"></script>
+    <script src="/Event/js/bootstrap.min.js"></script>
+    <script src="/Event/js/vue.js"></script>
+
+    <div id="lsdv" v-cloak>
+      <div class="container-fruid">
+        <!-- 刊頭 -->
+        <div class="col-xs-12 EDM" v-html>
+          <!-- 此段不要複製到每月活動 框架已有 -->
+          <link
+            href="https://www.eclife.com.tw/web/css/flexslider.css"
+            rel="stylesheet"
+          />
+          <script src="/web/js/Shared/jquery.flexslider.js"></script>
+          <script src="../MatchGame/js/main.js"></script>
+          <link href="../MatchGame/css/style.css" rel="stylesheet" />
+          <!-- End 此段不要複製到每月活動 框架已有 -->
+          <link
+            href="https://img.eclife.com.tw/EDM/Structure.min.V1.css"
+            rel="stylesheet"
+          />
+          <link
+            href="https://img.eclife.com.tw/EDM/11006/MatchGame/style.css"
+            rel="stylesheet"
+          />
+
+          <div class="col-xs-12 ec-logo">
+            <div class="container logo-well">
+              <div class="col-xs-12 col-md-1-5">
+                <a
+                  href="https://www.eclife.com.tw/"
+                  target="_blank"
+                  class="logo-a"
+                >
+                  <img
+                    src="https://img.eclife.com.tw/EDM/10907/MediaShow/Coupon/EClogo-white.svg"
+                    alt="EcLife"
+                    class="img-responsive"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 EDM" data-name="EDM">
+            <div class="container bd">
+              <div class="col-xs-12 title">
+                <picture>
+                  <source
+                    srcset="
+                      https://img.eclife.com.tw/EDM/11006/MatchGame/index-game_title.png
+                    "
+                    media="(min-width: 1023px)"
+                  />
+                  <source
+                    srcset="
+                      https://img.eclife.com.tw/EDM/11006/MatchGame/index-game-m_02.png
+                    "
+                    media="(max-width: 1023px)"
+                  />
+                  <img
+                    src="https://img.eclife.com.tw/EDM/11006/MatchGame/index-game_title.png"
+                    class="img-responsive"
+                    alt="翻出兩張就領購物金"
+                  />
+                </picture>
+                <img src="" class="img-responsive" />
+              </div>
+              <div class="col-xs-12 game">
+                <div class="col-xs-12 cards">
+                  <div class="col-xs-4 col-md-3 cardBox">
+                    <div class="col-xs-12 card">
+                      <div class="face front">
+                        <a onmousedown="bleep.play()">
+                          <img
+                            src="https://img.eclife.com.tw/EDM/11006/MatchGame/Card_bg.png"
+                            class="img-responsive"
+                          />
+                        </a>
+                      </div>
+                      <div class="face back"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--領購物金跳窗開始-->
+              <div class="modal fade" id="modal-container1" role="dialog">
+                <div class="modal-dialog">
+                  <div class="row modal-content">
+                    <button
+                      type="button"
+                      class="icon-cross"
+                      data-dismiss="modal"
+                    ></button>
+                    <div class="row">
+                      <!-- 內容 -->
+                      <div class="col-xs-12">
+                        <p class="modal-title">
+                          記憶力不錯喔<br />也別忘了要入手的商品呢
+                        </p>
+                        <div class="col-xs-12 InputDiv">
+                          <button
+                            class="col-xs-12 GetMediaCouponBtn"
+                            data-dismiss="modal"
+                          >
+                            現領$268購物金
+                          </button>
+                        </div>
+                      </div>
+                      <!-- 內容end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--領購物金跳窗結束-->
+              <!--領完購物金跳窗-->
+              <div class="modal fade" id="modal-container2" role="dialog">
+                <div class="modal-dialog">
+                  <div class="row modal-content">
+                    <button
+                      type="button"
+                      class="icon-cross"
+                      data-dismiss="modal"
+                    ></button>
+                    <div class="row">
+                      <!-- 內容 -->
+                      <div class="col-xs-12">
+                        <p class="modal-title modal-txt">
+                          感謝您！購物金已匯入您的會員帳戶<br />立即用!!
+                          6/21購物金自動消失
+                        </p>
+                        <div class="col-xs-12 InputDiv">
+                          <a
+                            href="https://www.eclife.com.tw/MonthEvent/618correction"
+                            class="col-xs-12"
+                            >查看優惠活動 GO</a
+                          >
+                        </div>
+                      </div>
+                      <!-- 內容end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--領完購物金跳窗結束-->
+              <!--已領過購物金跳窗-->
+              <div class="modal fade" id="modal-container3" role="dialog">
+                <div class="modal-dialog">
+                  <div class="row modal-content">
+                    <button
+                      type="button"
+                      class="icon-cross"
+                      data-dismiss="modal"
+                    ></button>
+                    <div class="row">
+                      <!-- 內容 -->
+                      <div class="col-xs-12">
+                        <p class="modal-title modal-txt">
+                          感謝您！您已領過購物金<br />立即用!!
+                          6/21購物金自動消失
+                        </p>
+                        <div class="col-xs-12 InputDiv">
+                          <a
+                            href="https://www.eclife.com.tw/MonthEvent/618correction"
+                            class="col-xs-12"
+                            >查看優惠活動 GO</a
+                          >
+                        </div>
+                      </div>
+                      <!-- 內容end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--已領過購物金跳窗結束-->
+            </div>
+          </div>
+          <div class="fr-fix">
+            <div class="hidden-xs">
+              <a
+                href="https://www.eclife.com.tw/MonthEvent/618correction"
+                class="fr-a"
+                >★活動主會場★</a
+              >
+              <a
+                href="https://www.eclife.com.tw/MonthEvent/618correction03"
+                class="fr-a"
+                >★ 稀缺現貨 ★</a
+              >
+              <a
+                href="https://www.eclife.com.tw/MonthEvent/618correction04"
+                class="fr-a"
+                >★ 一次購足 ★</a
+              >
+              <a
+                href="https://www.eclife.com.tw/MonthEvent/618correction05"
+                class="fr-a"
+                >★ 大方送禮 ★</a
+              >
+              <a
+                href="https://www.eclife.com.tw/MonthEvent/618correction02"
+                target="_blank"
+                class="fr-a"
+                >四大天王</a
+              >
+              <a
+                href="https://www.eclife.com.tw/pc_nb/0703270001/0503290085/0503300001/"
+                target="_blank"
+                class="fr-a"
+                >筆電送藍牙鼠</a
+              >
+              <a
+                href="https://www.eclife.com.tw/product/brand/FT"
+                target="_blank"
+                class="fr-a"
+                >UPS不斷電↘</a
+              >
+              <a
+                href="https://www.eclife.com.tw/pc_nb/0503300006/0704020025/"
+                target="_blank"
+                class="fr-a"
+                >DIY周邊2件9折</a
+              >
+              <a
+                href="https://www.eclife.com.tw/pc_nb/0703270005/1009210001/"
+                target="_blank"
+                class="fr-a"
+                >螢幕最低7折起</a
+              >
+              <a
+                href="https://www.eclife.com.tw/life/1212060024/1208160002/"
+                target="_blank"
+                class="fr-a"
+                >家電滿額送</a
+              >
+              <a
+                href="https://www.eclife.com.tw/product/brand/UGREEN"
+                target="_blank"
+                class="fr-a"
+                >綠聯線材9折</a
+              >
+            </div>
+            <!--  GoTop效果寫在架構上了-->
+            <div class="GoTop" style="display: none">
+              △<br /><span>TOP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- VUE 產品排排站-->
+    <script src="/Event/js/Index.V1.js"></script>
+  </body>
+</html>

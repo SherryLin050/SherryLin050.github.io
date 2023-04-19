@@ -1,0 +1,248 @@
+// 核心變數+混合設定
+@import _variables
+@import _minxins
+// 共用
+@import _scaffolding
+// 動畫
+@import _keyframes
+// 表單
+// @import Header/_Forms.V1
+// 按鈕
+// @import Header/_Buttons.V1
+// 背景變黑
+// @import Header/_BgCover.V1
+// 跳窗
+// @import Header/_ModalDialog.V1 
+// @import Header/_LoginDialog.V1
+// @import _modal
+// .icon-cross
+// 	&:before
+// 		content: url("https://img.eclife.com.tw/EDM/10907/MediaShow/Coupon/x.svg")
+// 		display: inline-block
+// 		width: 15px
+// 		padding-top: 5px
+// .icon-fb
+// 	&:before
+// 		content: url("https://img.eclife.com.tw/EDM/10907/MediaShow/Coupon/fb.svg") 
+// 		display: inline-block
+// 		width: 20px
+// 		position: relative
+// 		top: 2px
+// .LINEImg
+// 	width: 25px
+// 	position: absolute
+// 	left: -8px
+// 	top: -2px
+// .LineWall
+// 	position: relative
+// 	display: inline-block
+// 	margin: 1px 0 0
+// 	padding: 0 0 0 22px
+// .btnLine
+// 	background: #00b300
+// 	color: white
+// // EC hearder 隱藏
+// #HeaderApp
+// 	position: absolute
+// 	top: -100%
+// 	width: 0
+
+body
+	background: #0958da
+	background-size: 100%
+	overflow-x: hidden
+	@media (min-width: $screen-md)
+		background: url("https://img.eclife.com.tw/EDM/images/LINEfriend/index_bottombg.jpg") #0958da
+		background-size: 100%
+		overflow-x: hidden
+.container
+	@media (min-width: 768px) and (max-width: 1024px)
+		width: 100%
+	
+#lsdv
+	// 產品排排站
+	// @import _edm-1x5
+
+	.ec-logo
+		background-color: $BLACKcolor
+		text-align: center
+		+fontT
+		@media (min-width: $screen-sm)
+			text-align: left
+		.logo-well
+			padding: 10px
+		.logo-a
+			position: relative
+			display: inline-block
+			width: 40%
+			transform: translateY(3px)
+			font-weight: bold
+			float: left
+			margin-right: 30px
+			// 為了iphone5 設計的
+			@media (max-width: 321px)
+				width: 35%
+			@media (min-width: $screen-sm)
+				width: 30%
+			@media (min-width: $screen-lg)
+				width: 15%
+		.txtlink-a
+			position: relative
+			display: inline-block
+			padding: 15px 0 5px
+			margin: 0 5px 0 0
+			color: darken($WHITEcolor, 20%)
+			float: left
+			font-size: 1.2em
+			// 為了iphone5 設計的
+			@media (max-width: 321px)
+				padding: 5px 0 0 
+			@media (min-width: $screen-sm)
+				padding: 32px 0 0
+			@media (min-width: $screen-md)
+				padding: 15px 0 0
+			@media (min-width: $screen-md)
+				padding: 15px 0 0
+			&:after
+				@media (min-width: $screen-sm)
+					content: ""
+					margin: 0 10px
+					border-right: 1px solid
+					position: relative
+					left: 3px
+					top: 1px
+					height: 15px
+					display: inline-block
+			&:last-child
+				&:after
+					border-right: none				
+			&:nth-child(2)
+				margin: 0 5px 0 10px
+				// 為了iphone5 設計的
+				@media (max-width: 321px)
+					margin: 0 5px
+				@media (min-width: $screen-sm)
+					margin: 0 10px 0 50px
+			&:hover
+				color: $WHITEcolor
+		.link-a
+			position: relative
+			display: block
+			width: 100%
+			padding: 5px 0
+			margin: 0 auto
+			color: darken($WHITEcolor, 20%)
+			float: left
+			// 為了iphone5 設計的
+			@media (max-width: 321px)
+				padding: 5px 0 0 
+			&:hover
+				color: $WHITEcolor
+		.flexslider.txtlink
+			background: #ffffff
+			.slides>li
+				display: inline-block
+				text-align: center
+			.flex-direction-nav 
+				.flex-prev
+					top: 50%
+					transform: translateY(-50%)
+					left: 5px
+				.flex-next
+					right: 5px
+					top: 50%
+					transform: translateY(-50%) rotate(180deg)
+
+	.EDM
+		background: url("https://img.eclife.com.tw/EDM/images/LINEfriend/index_m_bg.jpg") 0 0 #0958da no-repeat
+		background-size: 100%
+		@media (min-width: $screen-md)
+			background: url("https://img.eclife.com.tw/EDM/images/LINEfriend/index_bottombg.jpg") 0 150px #0958da 
+			background-size: 100%
+		.topbg
+			width: auto
+			left: 50%
+			transform: translate(-50%, 0)
+			position: absolute
+		//bd定位用
+		.bd
+			position: relative
+			.ad
+				filter: drop-shadow(0px 0px 6px rgba(0,0,0,0.5))
+				&:hover
+					animation: scale 1.2s infinite
+
+		.BenefitWall
+			@media (min-width: $screen-md)
+				padding: 0 90px
+		.btngroup
+			text-align: center
+			margin: 10px 0 80px
+			@media (min-width: $screen-md)
+				margin: 50px 0 120px
+		.btn
+			display: inline-block
+			background: $WHITEcolor
+			color: #0a59dc
+			border-radius: 10px
+			padding: 10px 50px
+			margin: 50px 10px 0
+			width: 80%
+			font-size: 2em
+			line-height: 1.5em
+			font-weight: bold			
+			position: relative
+			overflow: hidden
+			transition: all .3s
+			z-index: 1
+			@media (min-width: $screen-md)
+				width: auto		
+				padding: 10px 50px				
+				margin: 0 50px	
+				&:before
+					content: ""
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 0%
+					height: 100%
+					transition: all .3s
+					background: #f30167
+					z-index: -1
+				&:hover
+					color: $WHITEcolor
+					&:before
+						width: 100%
+
+
+
+		.Detail
+			color: white
+			font-size: 1.2em
+			line-height: 1.2em
+			padding: 50px 20px 150px
+			@media (min-width: $screen-sm)
+				font-size: 2em
+			@media (min-width: $screen-lg)
+				font-size: 1.2em
+			.inner
+				margin: 50px 0 0
+				strong
+					color: yellow
+				.lst
+					padding-left: 35px
+					li
+						list-style: decimal
+		//右側固定選單
+		.fr-fix 
+			position: fixed
+			right: 10px
+			bottom: 10px
+			text-align: center
+			z-index: $zindex-navbar
+			.GoTop
+				color: $WHITEcolor
+				cursor: pointer
+				background: black
+				padding: 4px 10px 8px
+				border-radius: 100%

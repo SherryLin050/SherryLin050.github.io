@@ -1,0 +1,145 @@
+// 核心變數+混合設定
+@import _variables
+@import _minxins
+// 共用
+@import _scaffolding
+// 動畫
+@import _keyframes
+// 影片
+// @import _youtube
+// 跳窗
+// @import _modal
+// js-網站效果
+// @import _js-doc
+// 表單
+// @import _forms
+// 按鈕
+// @import _buttons
+ 
+body
+	background: url("https://img.eclife.com.tw/EDM/11009/shelloutgame/index-m_proBg.jpg") top fixed no-repeat #000000
+	background-size: 100%
+	@media (min-width: $screen-md) 
+		background: url("https://img.eclife.com.tw/EDM/11009/shelloutgame/index_proBg.jpg") center fixed no-repeat #000000
+		background-size: 140%
+	@media (min-width: $screen-lg) 
+		background: url("https://img.eclife.com.tw/EDM/11009/shelloutgame/index_proBg.jpg") center fixed no-repeat #000000
+		background-size: 100%
+
+
+#lsdv
+	// 導覽列
+	@import _side-nav
+	// 產品排排站
+	@import _edm-1x5 
+
+	.ec-logo
+		background-color: #000000
+		+fontT
+		.logo-well
+			padding: 5px
+		.logo-a
+			position: relative
+			display: inline-block
+			width: 30%
+			// 為了iphone5 設計的
+			@media (max-width: 321px)
+				width: 35%
+			@media (min-width: $screen-sm)
+				width: 15%
+	// .menubar
+	// 	// background-color: #212121
+	// 	// text-align: center
+	// 	+fontT
+	// 	.BrandLogi-well
+	// 		padding: 15px 0 10px
+	// 	.BrandLogi-a
+	// 		position: relative
+	// 		display: inline-block
+	// 		width: 60%
+	// 		// 為了iphone5 設計的
+	// 		@media (max-width: 321px)
+	// 			width: 35%
+	// 		@media (min-width: $screen-sm)
+	// 			width: 23%
+	//刊頭BG
+	.eventsPage
+		background: url("https://img.eclife.com.tw/EDM/11009/shelloutgame/index-m_bg.gif") center top no-repeat
+		background-size: 100%	
+		@media (min-width: $screen-md)
+			background: url("https://img.eclife.com.tw/EDM/11009/shelloutgame/index_Bg.gif") no-repeat center top
+			background-size: 155%
+		@media (min-width: $screen-lg)
+			background: url("https://img.eclife.com.tw/EDM/11009/shelloutgame/index_Bg.gif") no-repeat center top
+			background-size: 133%
+		@media (min-width: 1600px)
+			background: url("https://img.eclife.com.tw/EDM/11009/shelloutgame/index_Bg.gif") no-repeat center top
+			background-size: 110%
+		@media (min-width: 1800px)
+			background: url("https://img.eclife.com.tw/EDM/11009/shelloutgame/index_Bg.gif") no-repeat center top
+			background-size: 100%
+		// //bd定位用 
+		// .bd
+		// 	position: relative
+		// .title
+		// 	position: relative
+		// 	animation: flash 0.5s
+
+		// .ProL,.ProR
+		// 	&:hover
+		// 		transition: 0.8s		
+		// 		transform: translateY(-10px)
+		// 		filter: drop-shadow(5px 5px 5px #0070ff)	
+		// .ProL
+
+		// 	@media (min-width: $screen-md)
+		// 		position: absolute
+		// 		left: 0
+		// .ProR
+		// 	@media (min-width: $screen-md)
+		// 		position: absolute
+		// 		right: 0
+		// .flipInX	
+		// 	animation: flipInX 1s
+		// .ribbon
+		// 	&:hover				
+		// 		transform: translateY(-5px)
+		// 		filter: drop-shadow(5px 5px 5px #0070ff)
+		// .flag
+		// 	&:hover
+		// 		transition: 0.8s			
+		// 		filter: brightness(1.2)
+		// 		transform: translateY(-15px)
+
+	//右側固定選單
+	// .fr-fix 
+	// 	position: fixed
+	// 	right: 0
+	// 	bottom: 100px
+	// 	z-index: $zindex-navbar
+	// 	@media (min-width: $screen-md)
+	// 		bottom: 15%
+	// 	.frBG
+	// 		background: url("https://img.eclife.com.tw/EDM/11007/mediashow2021/frBG.png") no-repeat
+	// 		background-size: 100%
+	// 		@media (max-width:1440px)
+	// 			background-size: 160px
+	// 	img
+	// 		&:hover				
+	// 			transform: translateY(-5px)
+	// 			filter: drop-shadow(5px 5px 5px #0070ff)
+	// 		@media (max-width:1440px)
+	// 			width: 160px
+
+	// 置頂按鈕
+	#gotop
+		width: 40px
+		height: 40px
+		position: fixed
+		bottom: 70px 
+		right: 30px
+		z-index: 998
+		cursor: pointer
+		background: url("https://img.eclife.com.tw/EDM/11009/shelloutgame/gotop.png")
+		background-size: 100%
+		opacity: 0.8

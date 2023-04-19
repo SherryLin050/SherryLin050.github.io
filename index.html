@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Slogo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/css/loading.css"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-23NKQ8GVLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-23NKQ8GVLY');
+    </script>
+    <title>My Portfolio</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="loading">
+      <div class="loading-text">
+        <span class="loading-text-words">L</span>
+        <span class="loading-text-words">O</span>
+        <span class="loading-text-words">A</span>
+        <span class="loading-text-words">D</span>
+        <span class="loading-text-words">I</span>
+        <span class="loading-text-words">N</span>
+        <span class="loading-text-words">G</span>
+      </div>
+    </div>
+    <header></header>
+    <!-- blb-->
+    <section class="container-fuild">
+      <a href="/portfolio" title="作品集">
+        <picture>
+          <source srcset="/1110913-portfoilo.jpg" media="(min-width: 993px)">
+          <source srcset="/1111112-CT-800x538.jpg" media="(max-width: 992px)">
+          <img src="/1111112-CT-800x538.jpg" class="img-responsive" alt="過往作品">
+        </picture>
+      </a>
+    </section>
+    <!-- About Section-->
+    <section class="page-section container-fuild" id="about">
+      <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center">
+          ABOUT
+        </h2>
+        <!-- About Section Content-->
+        <div class="row align-items-center">
+          <div class="col-lg-4 ms-auto">
+            <div class="img-curcle">
+              <img src="/IMG_3666.JPG" alt="個人照" class="img-responsive">
+            </div>
+          </div>
+          <div class="col-lg-4 me-auto">
+            <p class="hd">林潔庭 Sherry</p>
+            <p class="inner">
+              從事設計專業8年，從基礎執行面廣宣物、EDM，到整體規劃面，包含活動主要視覺設計、品牌網站UI設計，並結合大學所學的專業資訊管理，進而在自己執行的專案中進行前端工程開發與網頁動態互動，對於網頁前端工程開法與設計有高度興趣。
+            </p>
+            <a href="/about.html">more...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section bg-primary" id="portfolio"></section>
+    <section class="page-section" id="contact"></section>
+    <footer></footer>
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/index.js"></script>
   </body>
 </html>

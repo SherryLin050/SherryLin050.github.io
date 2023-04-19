@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>時光屋抗漲</title>
+    <link rel="icon" type="image/svg+xml" href="/Slogo.svg"/>
+    <link
+            href="https://img.eclife.com.tw/EDM/Structure.min.V1.css"
+            rel="stylesheet"
+          />
+  </head>
+  <body>
+    <script src="/Event/js/jquery.min.js"></script>
+    <script src="/Event/js/bootstrap.min.js"></script>
+
+    <div id="lsdv">
+      <div class="container-fruid">
+        <!-- 刊頭 -->
+        <div class="col-xs-12 EDM">
+          <link href="../grocery/css/timeup.css" rel="stylesheet" />
+          <script src="../grocery/js/timeup.js?=20220520"></script>
+          <div class="htmlfix">
+            <div class="wrapper">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="shadow"></div>
+              <div class="shadow"></div>
+              <div class="shadow"></div>
+              <span>Loading</span>
+            </div>
+          </div>
+
+          <div class="container-fluid ec-logo">
+            <div class="container logo-well">
+              <a
+                href="https://www.eclife.com.tw/"
+                target="_blank"
+                class="logo-a"
+              >
+                <img
+                  src="https://img.eclife.com.tw/EDM/10907/MediaShow/Coupon/EClogo-white.svg"
+                  alt="EcLife"
+                  class="img-responsive"
+                />
+              </a>
+              <a
+                href="https://www.eclife.com.tw/MonthEvent/grocery202205"
+                target="_blank"
+                class="link-a"
+                >良興商行</a
+              >
+              <a
+                href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                target="_blank"
+                class="link-a"
+                >活動詳情</a
+              >
+            </div>
+          </div>
+          <div class="container-fluid EDM" data-name="EDM">
+            <div class="container">
+              <div class="col-xs-12 ttBox">
+                <a
+                  href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                  target="_blank"
+                  class="col-xs-12 tt"
+                >
+                  <picture>
+                    <source
+                      srcset="
+                        https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/index-time_05.png
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/index-m_time_tt.png
+                      "
+                      media="(max-width: 992px)"
+                    />
+                    <img
+                      src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/index-time_05.png"
+                      alt="良興商行"
+                      class="img-responsive"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div class="timeup">
+                <div class="inner">
+                  倒數
+                  <p id="countDownHour" class="num">99</p>
+                  時
+                  <p id="countDownMinute" class="num">99</p>
+                  分
+                  <p id="countDownSecond" class="num">99</p>
+                  秒
+                </div>
+              </div>
+              <div class="col-xs-12 todayProBox">
+                <div class="col-xs-12 inner">
+                  <div class="col-xs-6 col-md-3 ProB">
+                    <a
+                      href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                      target="_blank"
+                      class="col-xs-12 todayPro"
+                    >
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                        alt="良興商行"
+                        class="img-responsive"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-md-3 ProS">
+                    <a
+                      href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                      target="_blank"
+                      class="col-xs-12 todayPro"
+                    >
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                        alt="良興商行"
+                        class="img-responsive"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-md-3">
+                    <a
+                      href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                      target="_blank"
+                      class="col-xs-12 todayPro"
+                    >
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                        alt="良興商行"
+                        class="img-responsive"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-md-3">
+                    <a
+                      href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                      target="_blank"
+                      class="col-xs-12 todayPro"
+                    >
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                        alt="良興商行"
+                        class="img-responsive"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-md-3">
+                    <a
+                      href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                      target="_blank"
+                      class="col-xs-12 todayPro"
+                    >
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                        alt="良興商行"
+                        class="img-responsive"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-md-3">
+                    <a
+                      href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                      target="_blank"
+                      class="col-xs-12 todayPro"
+                    >
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                        alt="良興商行"
+                        class="img-responsive"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-md-3">
+                    <a
+                      href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                      target="_blank"
+                      class="col-xs-12 todayPro"
+                    >
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                        alt="良興商行"
+                        class="img-responsive"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-md-3">
+                    <a
+                      href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                      target="_blank"
+                      class="col-xs-12 todayPro"
+                    >
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                        alt="良興商行"
+                        class="img-responsive"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 comingProBox">
+                <div class="col-xs-12 inner">
+                  <a
+                    href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 comingPro"
+                  >
+                    <img
+                      src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                      alt="良興商行"
+                      class="img-responsive"
+                    />
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 comingPro"
+                  >
+                    <img
+                      src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                      alt="良興商行"
+                      class="img-responsive"
+                    />
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 comingPro"
+                  >
+                    <img
+                      src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                      alt="良興商行"
+                      class="img-responsive"
+                    />
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 comingPro"
+                  >
+                    <img
+                      src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                      alt="良興商行"
+                      class="img-responsive"
+                    />
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 comingPro"
+                  >
+                    <img
+                      src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                      alt="良興商行"
+                      class="img-responsive"
+                    />
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 comingPro"
+                  >
+                    <img
+                      src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                      alt="良興商行"
+                      class="img-responsive"
+                    />
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 comingPro"
+                  >
+                    <img
+                      src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                      alt="良興商行"
+                      class="img-responsive"
+                    />
+                  </a>
+                  <a
+                    href="https://www.eclife.com.tw/EDM/Cont6105.htm"
+                    target="_blank"
+                    class="col-xs-6 col-md-3 comingPro"
+                  >
+                    <img
+                      src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/Pro-01.png"
+                      alt="良興商行"
+                      class="img-responsive"
+                    />
+                  </a>
+                  <div class="col-xs-12 comingMask">
+                    <picture>
+                      <source
+                        srcset="
+                          https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/commingsoon-pc.png
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/commingsoon.png
+                        "
+                        media="(max-width: 992px)"
+                      />
+                      <img
+                        src="https://img.eclife.com.tw/EDM/11105/grocery202205/timeup/commingsoon-pc.png"
+                        alt="Coming"
+                        class="img-responsive"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fr-fix">
+            <div class="hidden-xs">
+              <div class="fr-hd">
+                <a
+                  href="https://www.eclife.com.tw/MonthEvent/grocery202205_game/VVip"
+                >
+                  <img
+                    src="https://img.eclife.com.tw/EDM/11105/grocery202205/fr-img.png"
+                    alt="玩遊戲拿現金"
+                  />
+                </a>
+              </div>
+              <div class="fr_bg">
+                <a href="" target="_blank" class="fr-a">三星▼登錄送好禮</a>
+                <a href="" target="_blank" class="fr-a">羅技▼滿額送好禮</a>
+                <a href="" target="_blank" class="fr-a">RAZER▼56折起</a>
+                <a href="" target="_blank" class="fr-a">賽睿▼最高省千元</a>
+                <a href="" target="_blank" class="fr-a">ROG▼抽萬元禮</a>
+                <a href="" target="_blank" class="fr-a">海盜船▼59折起</a>
+                <a href="" target="_blank" class="fr-a">MSI▼螢幕省5千</a>
+                <a href="" target="_blank" class="fr-a">BENQ▼登錄送</a>
+              </div>
+            </div>
+            <!-- GoTop效果寫在架構上了 -->
+            <div class="GoTop" style="display: none">
+              △<br /><span>TOP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

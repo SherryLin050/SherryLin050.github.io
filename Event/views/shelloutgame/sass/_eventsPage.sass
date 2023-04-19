@@ -1,0 +1,64 @@
+.game
+    margin: 0 0 100px
+.cards
+    position: relative
+.card
+    height: 180px
+    cursor: pointer
+    @media (min-width: $screen-sm)
+        height: 350px
+.cardBox
+    padding: 0 10px
+    @media (min-width: $screen-sm)
+        padding: 0 30px
+.face
+    width: 100%
+    height: 100%
+    border-radius: 10px
+    position: absolute
+    -webkit-backface-visibility: hidden
+    -webkit-transition: all .3s
+    overflow: hidden
+.front
+    z-index: 10
+.back
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 8
+/*牌面定位樣式*/
+.cardAJ
+    background: url("https://img.eclife.com.tw/EDM/11006/MatchGame/Card-01.png") no-repeat
+    background-origin: padding-box
+    background-size: 100%
+.cardAQ
+    background: url("https://img.eclife.com.tw/EDM/11006/MatchGame/Card-02.png") no-repeat
+    background-origin: padding-box
+    background-size: 100%
+.cardAK
+    background: url("https://img.eclife.com.tw/EDM/11006/MatchGame/Card-03.png") no-repeat
+    background-origin: padding-box
+    background-size: 100%
+.cardBJ
+    background: url("https://img.eclife.com.tw/EDM/11006/MatchGame/Card-04.png") no-repeat
+    background-origin: padding-box
+    background-size: 100%
+.cardBQ
+    background: url("https://img.eclife.com.tw/EDM/11006/MatchGame/Card-05.png") no-repeat
+    background-origin: padding-box
+    background-size: 100%
+.cardBK
+    background: url("https://img.eclife.com.tw/EDM/11006/MatchGame/Card-06.png") no-repeat
+    background-origin: padding-box
+    background-size: 100%
+
+.card-flipped .front
+    z-index: $zindex-floor
+    -webkit-transform: rotateY(180deg)
+.card-flipped .back
+    z-index: $zindex-navbar
+
+// 移除牌
+.card-removed
+    .back
+        z-index: $zindex-js-doc

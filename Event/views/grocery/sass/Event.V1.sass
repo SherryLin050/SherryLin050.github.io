@@ -1,0 +1,150 @@
+// 核心變數+混合設定
+@import _variables
+@import _minxins
+// 共用
+// @import _scaffolding
+// 動畫
+@import _keyframes
+// 影片
+// @import _youtube
+// 跳窗
+// @import _modal
+// js-網站效果
+// @import _js-doc
+// 表單
+// @import _forms
+// 按鈕
+// @import _buttons
+ 
+body
+	background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index-m_bg.jpg") top center repeat
+	background-size: 100%
+	@media (min-width: $screen-md) 
+		background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index_bg.jpg") top center repeat 
+		background-attachment: fixed
+
+
+#lsdv
+	// 導覽列
+	@import _side-nav
+	// 產品排排站
+	@import _edm-1x4.sass
+	.container
+		@media (max-width: $screen-md) and (min-width: $screen-xs)
+			width: 100%
+	.ec-logo
+		background-color: $BLACKcolor
+		+fontT
+		.logo-well
+			padding: 5px
+		.logo-a
+			position: relative
+			display: inline-block
+			width: 30%
+			// 為了iphone5 設計的
+			@media (max-width: 321px)
+				width: 35%
+			@media (min-width: $screen-sm)
+				width: 15%
+	//刊頭BG
+	.eventsPage
+		//bd定位用 
+		.app
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 50%
+			animation: app 2s
+		.hd
+			background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index-m_bgtop.jpg") top center no-repeat
+			background-size: 100%
+			@media (min-width: $screen-md) 
+				background: url(https://img.eclife.com.tw/EDM/11105/grocery202205/index_bgtop.jpg) top center no-repeat
+				background-size: 155%
+			@media (min-width: $screen-lg) 
+				background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index_bgtop.jpg") top center no-repeat
+		.brand_BG
+			background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index-m_daddybg.png") top center no-repeat
+			background-size: 100%
+			@media (min-width: $screen-md) 
+				background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index_daddybg.png") top center no-repeat
+		.gameBg
+			background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index-m_gamebg.png") top center no-repeat
+			background-size: 100%
+			@media (min-width: $screen-md) 
+				background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index_gamebg.png") top center no-repeat
+				background-size: 100%
+			@media (min-width: $screen-lg) 
+				background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index_gamebg.png") top center no-repeat
+		.topPro
+			animation: flipInX 1s
+
+		@media (min-width: $screen-md)
+			// 活動
+			.item1
+				top: 5%
+				right: 27%
+				width: 15%
+				animation-delay: 0.6s
+
+			.item2
+				top: 22%
+				right: 4%
+				width: 18%
+				animation-delay: 1.2s
+			
+			// 商品
+			.topPro
+				&:hover		
+					transition: 0.8s		
+					filter: brightness(1.2)
+					transform: translateY(-15px)
+			// 分類
+			.flag
+				&:hover
+					transition: 0.8s			
+					filter: brightness(1.2)
+					transform: translateY(-15px)
+			.app
+				&:hover
+					transition: 0.8s		
+					transform: translateY(-10px)
+					filter: drop-shadow(5px 5px 5px #f2a900)
+			.brand
+				&:hover
+					animation: tada 1s
+
+
+//右側固定選單
+.fr-fix
+	position: fixed
+	right: 0
+	bottom: 10px
+	border-radius: 0 0 0 15px
+	text-align: center
+	z-index: $zindex-navbar
+	overflow: hidden
+	@media (min-width: $screen-md)
+		bottom: 25%
+	.fr_bg
+		background: #ea020e
+	.fr-a
+		display: none
+		@media (min-width: $screen-md)
+			display: block
+			padding: 5px 0 5px 5px
+			border-bottom: 1px solid rgba(65,34,18,0.2)
+			color: #fff001
+			&:last-child
+				border-bottom: none
+			&:hover
+				color: #ffffff
+	.GoTop
+		background: #ea020e
+		padding: 10px
+		font-weight: 600
+		color: #fff001
+		cursor: pointer
+		@media (min-width: $screen-md)
+			padding: 0 10px 10px
+			border-top: 2px solid rgba(65,34,18,0.2)

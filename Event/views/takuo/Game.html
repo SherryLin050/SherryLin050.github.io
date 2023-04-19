@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDM</title>
+    <link rel="icon" type="image/svg+xml" href="/Slogo.svg" />
+    <link
+      href="https://www.eclife.com.tw/web/css/flexslider.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="/Event/js/jquery.min.js"></script>
+    <script src="/Event/js/jquery.flexslider.js"></script>    
+    <script src="/Event/js/bootstrap.min.js"></script>
+    <script src="/Event/js/vue.js"></script>
+    <div id="lsdv">
+      <div class="container-fruid">
+        <!-- 刊頭 -->
+        <div class="col-xs-12 EDM">
+          <!-- 此段不要複製到每月活動 框架已有 -->
+          <link
+            href="https://www.eclife.com.tw/web/css/flexslider.css"
+            rel="stylesheet"
+          />
+          <link href="../takuo/css/Game.css" rel="stylesheet" />
+          <script src="../takuo/js/Roulette.js"></script>
+          <link
+            href="https://img.eclife.com.tw/EDM/Structure.min.V1.css"
+            rel="stylesheet"
+          />
+          <!-- End 此段不要複製到每月活動 框架已有 -->
+          <link
+            href="https://img.eclife.com.tw/EDM/11008/Roulette/Game.css"
+            rel="stylesheet"
+          />
+          <div class="col-xs-12 ec-logo">
+            <div class="col-xs-12 logo-well">
+              <a href="https://www.eclife.com.tw/" class="logo-a">
+                <img
+                  src="https://img.eclife.com.tw/EDM/11008/takuo202108/logo.png"
+                  alt="EcLife"
+                  class="img-responsive"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 EDM" data-name="EDM">
+            <div class="container bd">
+              <div class="col-xs-12">
+                <div class="col-xs-12 tt">
+                  <picture>
+                    <source
+                      srcset="
+                        https://img.eclife.com.tw/EDM/11008/Roulette/game_tt.png
+                      "
+                      media="(min-width: 1023px)"
+                    />
+                    <source
+                      srcset="
+                        https://img.eclife.com.tw/EDM/11008/Roulette/game-m_tt.png
+                      "
+                      media="(max-width: 1023px)"
+                    />
+                    <img
+                      src="https://img.eclife.com.tw/EDM/11008/Roulette/game_tt.png"
+                      class="img-responsive"
+                      alt="良興改造計畫"
+                    />
+                  </picture>
+                </div>
+                <div class="lot-desc abs">
+                  <div id="lottery">
+                    <img
+                      src="https://img.eclife.com.tw/EDM/11008/Roulette/Roulette.png"
+                      class="img-responsive"
+                      alt="良興改造計畫"
+                    />
+                  </div>
+                </div>
+                <div class="lot-btn abs" id="pointer" onclick="playAudio();">
+                  <img
+                    src="https://img.eclife.com.tw/EDM/11008/Roulette/pointer.png"
+                    class="img-responsive"
+                    alt="良興改造計畫"
+                  />
+                </div>
+              </div>
+              <div class="col-xs-12 txtBox">
+                <div class="col-xs-12 txt">
+                  <p>注意事項：</p>
+                  <ol class="txtol">
+                    <li>
+                      改造大羅盤，獎項購物金及專屬連結使用期限2021.08.24-31
+                    </li>
+                    <li>每乙會員帳號一小時可轉動一次。</li>
+                    <li>
+                      轉到獎項，將提供購物金領取連結，點擊按鈕兌換購物金。跳開視窗即失去資格
+                    </li>
+                    <li>
+                      PS5連結、下殺商品連結、曼都植潤燙髮券將提供專屬連結。一帳號下單一次，連結勿外流，外流將即時終止獎項。
+                    </li>
+                    <li>
+                      <p>大羅盤購物金使用門檻:</p>
+                      <ul class="txtul">
+                        <li>$55全館購物金，滿$550可使用</li>
+                        <li>$111品牌購物金，品牌商品滿$1200可用</li>
+                        <li>$222品牌購物金，品牌商品滿$2600可用</li>
+                        <li>$333品牌購物金，品牌商品滿$3700可用</li>
+                      </ul>
+                    </li>
+                    <li>
+                      品牌購物金涵蓋品牌為(羅技、雷蛇、ROG、ASUS、微星、Cherry、賽睿、Linksys)，微星及ASUS螢幕不適用。
+                    </li>
+                    <li>福利品、組合品及特賣商品，不適用購物金等折扣活動。</li>
+                    <li>
+                      購物金獎項及PS5等下殺商品數量有限，良興EcLife購物網保有活動解釋權利。
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal-container1" role="dialog">
+            <div class="modal-dialog">
+              <button
+                type="button"
+                class="icon-cross"
+                data-dismiss="modal"
+              ></button>
+              <div class="row modal-content">
+                <!-- 內容 -->
+                <div class="col-xs-12">
+                  <p class="modal-title">恭喜您獲得!!<br />500元購物金</p>
+                  <p class="modal-ps"><a href="index.asp">立即前往購物</a></p>
+                </div>
+                <!-- 內容end -->
+              </div>
+            </div>
+          </div>
+          <div class="fr-fix">
+            <div class="hidden-xs frImg">
+              <a
+                href="./Index.V1.html"
+                target="_blank"
+              >
+                <img
+                  src="https://www.eclife.com.tw/EDM/11008/Roulette/fr-2.gif"
+                  alt="改造計畫"
+                  class="img-responsive"
+                />
+              </a>
+            </div>
+            <div class="hidden-xs fr-inner">
+              <a
+                href="https://www.eclife.com.tw/MonthEvent/201811member?MRID=1071128&coid=ecedm"
+                target="_blank"
+                class="fr-a"
+                >遊戲闖關拿紅利</a
+              >
+              <a
+                href="https://www.eclife.com.tw/EDM/Cont1653.htm?MRID=1071128&coid=ecedmm"
+                target="_blank"
+                class="fr-a"
+                >刷卡優惠</a
+              >
+              <a
+                href="https://www.eclife.com.tw/keyboard/moreinfo_144486.htm?MRID=1071128&coid=ecedm"
+                target="_blank"
+                class="fr-a"
+                >出國神隊友</a
+              >
+              <a
+                href="https://www.eclife.com.tw/EDM/Cont4652.htm?MRID=1071128&coid=ecedm"
+                target="_blank"
+                class="fr-a"
+                >除舊佈新</a
+              >
+              <a
+                href="https://www.eclife.com.tw/EDM/Cont4653.htm?MRID=1071128&coid=ecedm"
+                target="_blank"
+                class="fr-a"
+                >聖誕交換禮物</a
+              >
+              <a
+                href="https://www.eclife.com.tw/EDM/Cont4663.htm?MRID=1071128&coid=ecedm"
+                target="_blank"
+                class="fr-a"
+                >工具4起</a
+              >
+              <div class="GoTop" style="display: none">
+                △<br /><span>TOP</span>
+              </div>
+            </div>
+            <!--  GoTop效果寫在架構上了-->
+          </div>
+          <!-- 此段不要複製到每月活動 框架已有 -->
+          <script type="text/javascript">
+            // 算螢幕的寬度
+            function getTotalWidth() {
+              var myWidth;
+              if (typeof window.innerWidth == "number") {
+                myWidth = window.innerWidth - 20;
+              } else {
+                myWidth = document.documentElement.clientWidth - 20;
+              }
+              return myWidth;
+            }
+            //倒數
+            window.onload = function () {
+              var countDownDate = new Date("2020/8/1 00:00:00");
+              var countDate = new Date();
+              if (
+                document.getElementById("countDownSecond") &&
+                countDate < countDownDate
+              ) {
+                setInterval(function () {
+                  var countDate = new Date();
+                  var overDate = countDownDate.getTime() - countDate.getTime();
+                  var days = Math.floor(overDate / 24 / 60 / 60 / 1000);
+                  var hours = Math.floor(overDate / 60 / 60 / 1000) % 24;
+                  var mins = Math.floor(overDate / 60 / 1000) % 60;
+                  var seconds = Math.floor(overDate / 1000) % 60;
+                  document.getElementById("countDownDay").innerHTML = days;
+                  document.getElementById("countDownHour").innerHTML = hours;
+                  document.getElementById("countDownMinute").innerHTML = mins;
+                  document.getElementById("countDownSecond").innerHTML =
+                    seconds;
+                }, 1000);
+              }
+              if (document.getElementById("changeCSS")) {
+                if (countDate < countDownDate) {
+                  $("#changeCSS link").attr(
+                    "href",
+                    "https://img.eclife.com.tw/EDM/10907/MediaShow/EventCountdown.css"
+                  );
+                } else {
+                  $("#changeCSS link").attr(
+                    "href",
+                    "https://img.eclife.com.tw/EDM/10907/MediaShow/Event.V1.css"
+                  );
+                }
+              }
+            };
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

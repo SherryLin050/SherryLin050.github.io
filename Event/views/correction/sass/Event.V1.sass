@@ -1,0 +1,149 @@
+// 核心變數+混合設定
+@import _variables
+@import _minxins
+// 共用
+@import _scaffolding
+// 動畫
+@import _keyframes
+// 影片
+//@import _Youtube
+// 跳窗
+@import _modal
+// js-網站效果
+// @import _js-doc
+// 表單
+// @import _forms
+// 按鈕
+// @import _buttons
+
+
+body
+	background: #170e1f
+	background-size: 100%
+	@media (min-width: $screen-md)
+		background: url("https://img.eclife.com.tw/EDM/11006/618correction/index_03.jpg") center top
+		background-attachment: fixed
+#lsdv
+	// 產品排排站
+	@import _edm-1x5
+	.ec-logo
+		background-color: $BLACKcolor
+		text-align: center
+		+fontT
+		@media (min-width: $screen-sm)
+			text-align: left
+		.logo-well
+			padding: 10px
+		.logo-a
+			position: relative
+			display: inline-block
+			width: 70%
+			float: left
+			left: 50%
+			transform: translateX(-50%)
+			// 為了iphone5 設計的
+			@media (max-width: 321px)
+				width: 35%
+			@media (min-width: $screen-sm)
+				width: 20%
+				left: 0
+				transform: translateX(0)
+		.link-a
+			position: relative
+			display: inline-block
+			padding: 20px 0 0 
+			margin: 0 5px 0 0
+			color: darken($WHITEcolor, 15%)
+			float: left
+			font-weight: bold
+			// 為了iphone5 設計的
+			@media (max-width: 321px)
+				padding: 5px 0 0 
+			@media (min-width: $screen-sm)
+				padding: 32px 0 0
+			@media (min-width: $screen-md)
+				padding: 15px 0 0
+			@media (min-width: $screen-md)
+				padding: 25px 0 0
+			&:after
+				@media (min-width: $screen-sm)
+					content: "｜"
+					margin-left: 10px
+			&:last-child
+				&:after
+					content: ""				
+			&:nth-child(2)
+				margin: 0 5px 0 10px
+				// 為了iphone5 設計的
+				@media (max-width: 321px)
+					margin: 0 5px
+				@media (min-width: $screen-sm)
+					margin: 0 10px 0 30px
+			&:hover
+				color: $WHITEcolor
+	.TopBg
+		background: url("https://img.eclife.com.tw/EDM/11006/618correction/index-m_02.jpg") center top no-repeat
+		background-size: 100%
+		@media (min-width: $screen-md)
+			background: url("https://img.eclife.com.tw/EDM/11006/618correction/index_02.jpg") center top no-repeat
+		.LeftPro, .RightPro
+			.Pro
+				animation: jello 1s
+				transition: 1s
+				filter: drop-shadow(10px 10px 10px #000000)
+				&:hover
+					transform: translateY(-5px)
+					filter: drop-shadow(10px 10px 5px #8c004f)
+					
+		.tb-a
+			transition: 1s
+			filter: drop-shadow(10px 10px 10px #000000)
+			&:hover
+				transform: translateY(-5px)
+		.item-a
+			transition: 1s
+			filter: drop-shadow(10px 10px 10px #000000)
+			&:hover
+				transform: translateY(-10px)
+		.lst-a
+			@media (min-width: $screen-md)
+				transition: 1s
+				filter: grayscale(20%)
+				&:hover
+					transform: translateY(-10px)
+					filter: drop-shadow(10px 10px 10px #000000) grayscale(0%)
+
+	//右側固定選單
+	.fr-fix
+		position: fixed
+		right: 0
+		bottom: 10px
+		// padding: 10px
+		background: rgba(213,1,232,0.85)
+		border-radius: 15px 0 0 15px
+		text-align: center
+		z-index: $zindex-navbar
+		@media (min-width: $screen-md)
+			bottom: 25%
+		.hidden-xs
+			padding: 10px
+		.fr-a
+			display: none
+			@media (min-width: $screen-md)
+				display: block
+				padding: 5px 0 5px 5px
+				border-bottom: 1px solid rgba(65,34,18,0.2)
+				color: #000000
+				&:last-child
+					border-bottom: none
+				&:hover
+					color: #fcff00
+		.GoTop
+			padding: 10px
+			font-weight: 600
+			color: #552c18
+			cursor: pointer
+			@media (min-width: $screen-md)
+				padding: 0 10px 10px
+				margin-top: -10px
+				border-top: 2px solid rgba(65,34,18,0.2)

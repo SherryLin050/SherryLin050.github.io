@@ -1,0 +1,66 @@
+@keyframes scale
+	0%
+		transform: scale(0.5)
+	50%
+		transform: scale(1.3)
+	100%
+		transform: scale(1)
+
+@keyframes rotate
+	0%,100%
+		transform: rotate(-2deg)
+	// 100%
+	// 	transform: rotate(1260deg)
+@keyframes tada
+	0%
+		transform: scale3d(1, 1, 1)
+	10%
+		transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)
+	20%
+		transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)
+	30%
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+	50%
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+	70%
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+	90%
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+	80%
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+	40%
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+	60%
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+	100%
+		transform: scale3d(1, 1, 1)
+@keyframes translate
+	0%
+		transform: translate(0, -10px)
+	50%
+		transform: translate(5px, 0px)
+	100%
+		transform: translate(0, -10px)
+		
+@keyframes translateX
+	0%,100%
+		transform: translateX(-5px)
+
+@keyframes Title
+	0%,28%,35%,42%,52%,72%
+		opacity: 1
+		filter: brightness(1.5)
+	45%,65%,100%
+		opacity: 1
+		filter: brightness(0.9)
+	30%,40%,50%,70%
+		opacity: 0
+@keyframes loadingmove
+	0%
+		stroke-dasharray: 90
+		stroke-dashoffset: 90
+
+	100%
+		stroke-dasharray: 350
+		stroke-dashoffset: 0
+

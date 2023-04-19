@@ -1,0 +1,300 @@
+// 核心變數+混合設定
+@import _variables
+@import _minxins
+// 共用
+@import _scaffolding
+// 動畫
+@import _keyframes
+// 影片
+// @import _youtube
+// 跳窗
+@import _modal
+// js-網站效果
+@import _js-doc
+// 表單
+// @import _forms
+// 按鈕
+// @import _buttons
+html, body
+	width: 100%
+	height: 100%
+	padding: 0
+	margin: 0
+	overflow-x: hidden
+
+[v-for],[v-if],[v-cloak],[hidden],template
+	display: block
+
+.skrollable
+	position: fixed
+	z-index: 100
+.skrollr-mobile .skrollable
+	position: absolute
+.skrollable .skrollable
+	position: absolute
+	.skrollable
+		position: static
+
+#lsdv
+	header
+		position: fixed
+		top: 0
+		z-index: 100
+		width: 100%
+	.ec-logo
+		background-color: #0088cf
+		+fontT
+		.logo-well
+			padding: 5px
+		.logo-a
+			position: relative
+			display: inline-block
+			width: 30%
+			// 為了iphone5 設計的
+			@media (max-width: 321px)
+				width: 35%
+			@media (min-width: $screen-sm)
+				width: 15%
+	//刊頭BG
+	.eventsPage
+		//bd定位用 
+		.f-bg
+			width: 100%
+			height: 100%
+			overflow: hidden
+			&.f-bg1
+				z-index: 4
+			&.f-bg2
+				background-image: url("https://img.eclife.com.tw/EDM/11010/PowerStore/mBg-02.jpg")
+				background-position: bottom
+				background-size: 100%
+				z-index: 3
+				@media (min-width: $screen-md)
+					background-image: url("https://img.eclife.com.tw/EDM/11010/PowerStore/1920x1280-02.jpg")
+					background-position: bottom
+			&.f-bg3
+				background-image: url("https://img.eclife.com.tw/EDM/11010/PowerStore/mBg-03.jpg")
+				background-position: bottom
+				background-size: 100%
+				z-index: 2
+				@media (min-width: $screen-md)
+					background-image: url("https://img.eclife.com.tw/EDM/11010/PowerStore/1920x1280-03.jpg")
+					background-position: bottom
+			&.f-bg4
+				background-image: url("https://img.eclife.com.tw/EDM/11010/PowerStore/mBg-04.jpg")
+				background-position: bottom
+				background-size: 100%
+				z-index: 1
+				@media (min-width: $screen-md)
+					background-image: url("https://img.eclife.com.tw/EDM/11010/PowerStore/1920x1280-04.jpg")
+					background-position: bottom
+		.o_figure
+			position: relative
+			width: 100%
+			height: 100vh
+			.title
+				width: 100%
+				position: absolute
+				top: 50%
+				left: 50%
+				display: block
+				font-size: 80px
+				line-height: 85px
+				color: #000
+				text-align: center
+				font-weight: bold
+				z-index: 1
+				-webkit-transform: translate(-50%,-50%)
+				transform: translate(-50%,-50%)
+				@media (min-width: $screen-md)
+					width: auto
+			strong
+				display: block
+				position: absolute
+				width: 100%
+				margin: 0 0 10px
+				color: white
+				font-size: 80px
+				line-height: 80px
+				top: 70px
+				text-align: center	
+				line-height: 30px		
+				@media (min-width: $screen-md)
+					font-size: 120px
+					top: 50%
+					transform: translateY(-50%)
+					line-height: 50px
+					&.str-b
+						color: #000
+				small
+					font-size: 15px
+					line-height: 30px
+					@media (min-width: $screen-md)
+						font-size: 25px
+			.tit
+				position: absolute
+				top: 50%
+				left: 50%
+				display: block
+				font-size: 80px
+				line-height: 85px
+				color: #000
+				text-align: center
+				font-weight: bold
+				z-index: 1
+				-webkit-transform: translate(-50%, -50%)
+				transform: translate(-50%, -50%)
+				@media (max-width: 376px)
+					font-size: 75px
+				@media (min-width: $screen-md)
+					padding: 0 100px
+				
+				.PowerIcon
+					position: relative
+					display: flex
+					align-items: center
+					justify-content: flex-start
+					padding: 10px 20px
+					@media (min-width: $screen-md)
+						padding: 15px 20px
+					.qb_btn-acc
+						cursor: pointer
+						.btn-wrapper
+							.btn-body
+								position: relative
+								top: 0
+								display: flex
+								align-items: center
+								-webkit-box-sizing: content-box
+								box-sizing: content-box
+								background-color: #fff
+								height: 40px
+								border-radius: 200px
+								padding: 15px 17px 15px 10px
+								overflow: hidden
+								white-space: nowrap
+								-webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08)
+								box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08)
+								-webkit-transition: opacity .25s,max-width .2s
+								transition: opacity .25s,max-width .2s
+								max-width: 1000px
+								opacity: 1
+								@media (min-width: $screen-md)
+									position: absolute
+									top: 0
+									display: flex
+									align-items: center
+									opacity: 0
+									max-width: 80px
+									padding: 22px 17px 23px 10px
+									
+								.box
+									float: left
+									.tag
+										display: flex
+										align-items: center
+										width: -webkit-max-content
+										width: -moz-max-content
+										width: max-content
+										font-size: 22px
+										color: #000				
+										-webkit-transition: opacity .1s
+										transition: opacity .1s
+										opacity: 1
+										@media (min-width: $screen-md)
+											opacity: 0
+										.PowerImg
+											display: inline-block
+											width: 55px
+											height: 55px
+											padding: 10px
+											margin-right: 10px
+											background: #000
+											border-radius: 100%
+											@media (min-width: $screen-md)
+												width: 70px
+												height: 70px
+
+
+							.btn-circle
+								display: none
+								@media (min-width: $screen-md)
+									display: block
+									position: relative
+									width: 80px
+									height: 80px
+									padding: 5px
+									border-radius: 50%
+									background-color: #fff
+									-webkit-transition: width .12s ease-out,height .12s ease-out,left .12s,right .12s,background-color .2s
+									transition: width .12s ease-out,height .12s ease-out,left .12s,right .12s,background-color .2s
+									-webkit-transition-delay: 90ms
+									transition-delay: 90ms
+									transform: translateY(-10px)
+									&::before
+										content: ''
+										position: absolute
+										width: 95px
+										height: 95px
+										border-radius: 50%
+										background-color: #fff
+										top: 50%
+										left: 50%
+										-webkit-transform: translate(-50%, -50%) scale(1)
+										transform: translate(-50%, -50%) scale(1)
+										transition: 1s
+										animation: curcleAction 2s infinite
+										z-index: -1
+						@media (min-width: $screen-md)
+							&:hover, &:focus 
+								.btn-body 
+									max-width: 1000px
+									opacity: 1
+									-webkit-transition: opacity .1s,max-width .6s ease-in
+									transition: opacity .1s,max-width .6s ease-in
+									-webkit-transition-delay: 80ms
+									transition-delay: 80ms
+									.box .tag
+										opacity: 1
+										-webkit-transition: opacity .15s ease-in
+										transition: opacity .15s ease-in
+										-webkit-transition-delay: .12s
+										transition-delay: .12s
+								.btn-circle
+									&::before
+										display: none
+
+
+
+	//右側固定選單
+	.fr-fix 
+		position: fixed
+		right: 0
+		bottom: 100px
+		z-index: $zindex-navbar
+		@media (min-width: $screen-md)
+			bottom: 15%
+		.frBG
+			background: url("https://img.eclife.com.tw/EDM/11007/mediashow2021/frBG.png") no-repeat
+			background-size: 100%
+			@media (max-width:1440px)
+				background-size: 160px
+		img
+			&:hover				
+				transform: translateY(-5px)
+				filter: drop-shadow(5px 5px 5px #0070ff)
+			@media (max-width:1440px)
+				width: 160px
+
+	// 置頂按鈕
+	#gotop
+		width: 40px
+		height: 40px
+		position: fixed
+		bottom: 70px 
+		right: 30px
+		z-index: 998
+		cursor: pointer
+		background: url("https://img.eclife.com.tw/EDM/11007/mediashow2021/gotop.png")
+		background-size: 100%
+		opacity: 0.8

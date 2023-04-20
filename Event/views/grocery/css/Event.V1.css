@@ -1,0 +1,686 @@
+@charset "UTF-8";
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0%;
+  }
+}
+@keyframes shadow {
+  0% {
+    transform: scaleX(1.5);
+  }
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
+  }
+}
+@keyframes rotate {
+  0%, 100% {
+    transform: rotate(-2deg);
+  }
+}
+@keyframes translate {
+  0% {
+    transform: translate(0, -10px);
+  }
+  50% {
+    transform: translate(5px, 0px);
+  }
+  100% {
+    transform: translate(0, -10px);
+  }
+}
+@keyframes translateX {
+  0%, 100% {
+    transform: translateX(-5px);
+  }
+}
+@keyframes shake {
+  0%, to {
+    transform: translateZ(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+@keyframes rotateInDownLeft {
+  0% {
+    opacity: 0;
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+    transform-origin: left bottom;
+  }
+}
+@keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes btncolor {
+  20%, 60%, to {
+    box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8);
+  }
+  40%, 80% {
+    box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.3);
+  }
+}
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  100% {
+    transform: perspective(400px);
+  }
+}
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes tada {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  10% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  70% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  60% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* animations */
+@keyframes typed {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes app {
+  0% {
+    transform: translateX(300px);
+    z-index: -1;
+  }
+  100% {
+    transform: translateX(0px);
+    z-index: 0;
+  }
+}
+body {
+  background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index-m_bg.jpg") top center repeat;
+  background-size: 100%;
+}
+@media (min-width: 992px) {
+  body {
+    background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index_bg.jpg") top center repeat;
+    background-attachment: fixed;
+  }
+}
+
+#lsdv .mainNAV {
+  position: relative;
+}
+@media (min-width: 768px) {
+  #lsdv .mainNAV {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #lsdv .mainNAV {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  #lsdv .mainNAV {
+    width: auto;
+  }
+}
+#lsdv .side-nav {
+  z-index: 99;
+}
+#lsdv .side-nav li a {
+  color: white;
+}
+@media (min-width: 290px) and (max-width: 1199px) {
+  #lsdv .mainNAV {
+    height: 100%;
+    margin: 0 auto;
+  }
+  #lsdv .mainNAV button {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    background: none;
+    color: #ffff00;
+    border: 0;
+    text-align: -webkit-center;
+    text-align: center;
+  }
+  #lsdv .mainNAV button:before {
+    content: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-01.svg);
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: block;
+    width: 44px;
+    height: 44px;
+  }
+  #lsdv .side-nav {
+    position: fixed;
+    right: -105%;
+    top: 0;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: #232323;
+  }
+  #lsdv .side-nav .side-nav-list {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 15px 15px;
+    font: 1em/1.2em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #f2f2f2;
+    cursor: pointer;
+  }
+  #lsdv .side-nav .side-nav-list a {
+    display: block;
+    color: #ffffff;
+  }
+  #lsdv .side-nav .side-nav-list:nth-child(1) a {
+    display: inline;
+  }
+  #lsdv .side-nav .side-nav-list:nth-child(1) a:nth-child(2) {
+    border-left: 1px solid #e6e6e6;
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+  #lsdv .side-nav .side-nav-list .megaMENU {
+    position: absolute;
+    left: 0 !important;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    float: left;
+    background: #333333;
+    transition: all 0.2s;
+    transform: translate(-100%, 10px);
+  }
+  #lsdv .side-nav .side-nav-list .megaMENU ul {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+  }
+  #lsdv .side-nav .side-nav-list .megaMENU .megaMENU-list {
+    padding: 10px 1rem;
+  }
+  #lsdv .side-nav .js-side-nav-in .megaMENU {
+    position: relative;
+    top: 15px;
+    left: -70px !important;
+    padding: 10px 0;
+    width: calc(100% + 70px);
+    height: 100%;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  #lsdv .side-nav .js-side-nav-in .megaMENU .megaMENU-list {
+    padding: 10px 0 10px 70px;
+  }
+  #lsdv .side-nav .side-nav-logo {
+    margin: 0 0 20px;
+    padding: 20px 0;
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+  #lsdv .side-nav .side-nav-logo img {
+    width: 40vw;
+    height: auto;
+  }
+  #lsdv .side-nav .menu1 {
+    background: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-icon-xs.svg) no-repeat 20px -40px;
+  }
+  #lsdv .side-nav .menu2 {
+    background: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-icon-xs.svg) no-repeat 20px -80px;
+  }
+  #lsdv .side-nav .menu3 {
+    background: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-icon-xs.svg) no-repeat 20px -120px;
+  }
+  #lsdv .side-nav .menu4 {
+    background: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-icon-xs.svg) no-repeat 20px -160px;
+  }
+  #lsdv .side-nav .menu5 {
+    background: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-icon-xs.svg) no-repeat 20px -200px;
+  }
+  #lsdv .side-nav .menu6 {
+    background: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-icon-xs.svg) no-repeat 20px -240px;
+  }
+  #lsdv .side-nav .menu7 {
+    background: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-icon-xs.svg) no-repeat 20px -280px;
+  }
+  #lsdv .side-nav .menu8 {
+    background: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-icon-xs.svg) no-repeat 20px -320px;
+  }
+  #lsdv .side-nav .menu9 {
+    background: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-icon-xs.svg) no-repeat 20px -360px;
+  }
+  #lsdv .side-nav .menu10 {
+    background: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-icon-xs.svg) no-repeat 20px -400px;
+  }
+  #lsdv .side-nav .menu11 {
+    background: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-icon-xs.svg) no-repeat 20px -440px;
+  }
+  #lsdv .side-nav .menu12 {
+    background: url(https://img.eclife.com.tw/EDM/images/BrandLogi/menu-icon-xs.svg) no-repeat 20px -480px;
+  }
+}
+@media (min-width: 1200px) {
+  #lsdv .mainNAV {
+    background: #555555;
+  }
+  #lsdv .mainNAV button {
+    display: none;
+  }
+  #lsdv .side-nav {
+    margin: 0 auto;
+    width: 1170px;
+    height: auto;
+    text-align: center;
+  }
+  #lsdv .side-nav .side-nav-list {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 10px 30px;
+    font: 1em/1.2em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05em;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  #lsdv .side-nav .side-nav-list .megaMENU {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s ease;
+    transform-origin: 12.5% 0;
+    transform: scale(1, 0);
+  }
+  #lsdv .side-nav .side-nav-list .megaMENU ul {
+    margin: 9px;
+    padding: 0;
+    width: 100px;
+    overflow: hidden;
+    float: left;
+    z-index: 9;
+  }
+  #lsdv .side-nav .side-nav-list .megaMENU .megaMENU-list {
+    display: block;
+    position: relative;
+    border: 0;
+    font: 0.85em/2.2em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  #lsdv .side-nav .side-nav-list .megaMENU .megaMENU-list a {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    position: relative;
+    color: #ffffff;
+  }
+  #lsdv .side-nav .side-nav-list .megaMENU .megaMENU-list a:hover {
+    color: #cccccc;
+  }
+  #lsdv .side-nav .side-nav-list:hover {
+    background: #212121;
+    color: #ffffff;
+  }
+  #lsdv .side-nav .side-nav-list:hover a {
+    color: #ffffff;
+  }
+  #lsdv .side-nav .side-nav-list:hover .megaMENU {
+    opacity: 1;
+    background: #212121;
+    z-index: 9;
+    transform: scale(1, 1);
+  }
+}
+#lsdv .side-nav .menu10, #lsdv .side-nav .menu12 {
+  float: right;
+}
+#lsdv .side-nav .icon-official, #lsdv .side-nav .icon-fb {
+  font-family: "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+#lsdv .side-nav .icon-official:before, #lsdv .side-nav .icon-fb:before {
+  padding-right: 5px;
+  font-family: "icomoon" !important;
+}
+@media (min-width: 290px) and (max-width: 1199px) {
+  #lsdv .icon-official, #lsdv .icon-fb {
+    font-weight: 600;
+  }
+  #lsdv .icon-official:before, #lsdv .icon-fb:before {
+    display: none;
+  }
+}
+#lsdv .ProdList {
+  margin-bottom: 50px;
+  padding: 0 10px;
+  font-size: 14px;
+  font: 1em/1.3em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#lsdv .ProdList .p-lst {
+  margin: 0 0 10px;
+  padding: 5px 10px;
+  text-align: center;
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+@media (min-width: 1200px) {
+  #lsdv .ProdList .p-lst {
+    width: 25%;
+  }
+}
+#lsdv .ProdList .p-lst .inner {
+  padding-top: 5px;
+}
+#lsdv .ProdList .p-lst .pMo {
+  margin: 5px 0;
+  padding: 5px 0;
+  color: #ffffff;
+  background: #50b8f7;
+  height: 27px;
+  display: block;
+  overflow: hidden;
+}
+#lsdv .ProdList .p-lst .pName {
+  margin: 5px 0;
+  color: #666666;
+  height: 42px;
+  overflow: hidden;
+}
+#lsdv .ProdList .p-lst .sPrice, #lsdv .ProdList .p-lst .gPrice {
+  font-family: futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#lsdv .ProdList .p-lst .gPrice {
+  margin: 0 0 5px;
+  color: #666666;
+}
+#lsdv .ProdList .p-lst .sPrice {
+  font-weight: bold;
+  color: #df0000;
+}
+#lsdv .ProdList .p-lst .sPrice b {
+  font-size: 1.25em;
+  letter-spacing: -1px;
+}
+@media (min-width: 1200px) {
+  #lsdv .ProdList .p-lst .sPrice b {
+    font-size: 1.5em;
+  }
+}
+#lsdv .ProdList .p-lst strong {
+  display: block;
+  height: 20px;
+  overflow: hidden;
+  font-weight: bold;
+  color: #df0000;
+}
+#lsdv .ProdList .p-lst:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9;
+}
+@media (max-width: 992px) and (min-width: 480px) {
+  #lsdv .container {
+    width: 100%;
+  }
+}
+#lsdv .ec-logo {
+  background-color: #000000;
+  font: 1em/1.2em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#lsdv .ec-logo .logo-well {
+  padding: 5px;
+}
+#lsdv .ec-logo .logo-a {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+}
+@media (max-width: 321px) {
+  #lsdv .ec-logo .logo-a {
+    width: 35%;
+  }
+}
+@media (min-width: 768px) {
+  #lsdv .ec-logo .logo-a {
+    width: 15%;
+  }
+}
+#lsdv .eventsPage .app {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  animation: app 2s;
+}
+#lsdv .eventsPage .hd {
+  background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index-m_bgtop.jpg") top center no-repeat;
+  background-size: 100%;
+}
+@media (min-width: 992px) {
+  #lsdv .eventsPage .hd {
+    background: url(https://img.eclife.com.tw/EDM/11105/grocery202205/index_bgtop.jpg) top center no-repeat;
+    background-size: 155%;
+  }
+}
+@media (min-width: 1200px) {
+  #lsdv .eventsPage .hd {
+    background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index_bgtop.jpg") top center no-repeat;
+  }
+}
+#lsdv .eventsPage .brand_BG {
+  background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index-m_daddybg.png") top center no-repeat;
+  background-size: 100%;
+}
+@media (min-width: 992px) {
+  #lsdv .eventsPage .brand_BG {
+    background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index_daddybg.png") top center no-repeat;
+  }
+}
+#lsdv .eventsPage .gameBg {
+  background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index-m_gamebg.png") top center no-repeat;
+  background-size: 100%;
+}
+@media (min-width: 992px) {
+  #lsdv .eventsPage .gameBg {
+    background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index_gamebg.png") top center no-repeat;
+    background-size: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #lsdv .eventsPage .gameBg {
+    background: url("https://img.eclife.com.tw/EDM/11105/grocery202205/index_gamebg.png") top center no-repeat;
+  }
+}
+#lsdv .eventsPage .topPro {
+  animation: flipInX 1s;
+}
+@media (min-width: 992px) {
+  #lsdv .eventsPage .item1 {
+    top: 5%;
+    right: 27%;
+    width: 15%;
+    animation-delay: 0.6s;
+  }
+  #lsdv .eventsPage .item2 {
+    top: 22%;
+    right: 4%;
+    width: 18%;
+    animation-delay: 1.2s;
+  }
+  #lsdv .eventsPage .topPro:hover {
+    transition: 0.8s;
+    filter: brightness(1.2);
+    transform: translateY(-15px);
+  }
+  #lsdv .eventsPage .flag:hover {
+    transition: 0.8s;
+    filter: brightness(1.2);
+    transform: translateY(-15px);
+  }
+  #lsdv .eventsPage .app:hover {
+    transition: 0.8s;
+    transform: translateY(-10px);
+    filter: drop-shadow(5px 5px 5px #f2a900);
+  }
+  #lsdv .eventsPage .brand:hover {
+    animation: tada 1s;
+  }
+}
+
+.fr-fix {
+  position: fixed;
+  right: 0;
+  bottom: 10px;
+  border-radius: 0 0 0 15px;
+  text-align: center;
+  z-index: 99;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .fr-fix {
+    bottom: 25%;
+  }
+}
+.fr-fix .fr_bg {
+  background: #ea020e;
+}
+.fr-fix .fr-a {
+  display: none;
+}
+@media (min-width: 992px) {
+  .fr-fix .fr-a {
+    display: block;
+    padding: 5px 0 5px 5px;
+    border-bottom: 1px solid rgba(65, 34, 18, 0.2);
+    color: #fff001;
+  }
+  .fr-fix .fr-a:last-child {
+    border-bottom: none;
+  }
+  .fr-fix .fr-a:hover {
+    color: #ffffff;
+  }
+}
+.fr-fix .GoTop {
+  background: #ea020e;
+  padding: 10px;
+  font-weight: 600;
+  color: #fff001;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .fr-fix .GoTop {
+    padding: 0 10px 10px;
+    border-top: 2px solid rgba(65, 34, 18, 0.2);
+  }
+}

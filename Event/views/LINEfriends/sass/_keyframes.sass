@@ -1,0 +1,46 @@
+@keyframes flipInX 
+	0% 
+		transform: perspective(400px) rotate3d(1, 0, 0, 90deg)
+		animation-timing-function: ease-in
+		opacity: 0
+
+
+	40% 
+		transform: perspective(400px) rotate3d(1, 0, 0, -20deg)
+		animation-timing-function: ease-in
+
+
+	60% 
+		transform: perspective(400px) rotate3d(1, 0, 0, 10deg)
+		opacity: 1
+
+
+	80% 
+		transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+
+
+	100% 
+		transform: perspective(400px)
+@keyframes scale
+	0%
+		transform: scale(1)
+	50%
+		transform: scale(0.95)
+	100%
+		transform: scale(1)
+@keyframes mCloud
+	0%
+		transform: translateY(150px)
+	100
+		transform: translateY(0)
+
+@keyframes LCloud
+	0%
+		transform: translateX(-150px)
+	100
+		transform: translateX(0)
+@keyframes RCloud
+	0%
+		transform: translateX(150px)
+	100
+		transform: translateX(0)

@@ -1,0 +1,97 @@
+// 跳窗
+// 桌機版 Alert共用ModalDialog
+#ModalDialog
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	overflow: auto
+	overflow-y: scroll
+	z-index: 1010
+	font-size: 16px
+	img[src=""]
+		display: none
+	a[href=""]
+		display: none
+	.ModalContent
+		position: relative
+		width: 90%
+		margin: 2% auto
+		pointer-events: auto
+		@media (min-width: $screen-sm)
+			width: 80%
+		@media (min-width: $screen-md)
+			max-width: 500px
+	.Alert-ModalContent
+		position: absolute
+		width: 50%
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-80%)
+		pointer-events: auto
+		@media (min-width: $screen-lg)
+			max-width: 500px
+	.Modal-bd
+		+animation(translateModalY 0.3s 1)
+	// 標題
+	.Modal-tt
+		padding: 15px 30px 10px 30px
+		border-radius: 20px 20px 0 0
+		background: $CIScolorA
+		color: $WHITEcolor
+		font-size: $font-size-md
+	// 動態載入內容
+	.Modal-ct
+		width: 100%
+		+distanceMP(0 auto,10px 30px 30px)
+		color: darken($WHITEcolor, 66%)
+		border: 2px solid $CIScolorA
+		background: darken($WHITEcolor, 5%)
+		border-radius: 0 0 20px 20px
+	.ModalBtn
+		+distanceMP(0 auto,10px 0 0)
+		text-align: center
+	.ModalUrl
+		display: block
+		margin-top: 10px
+		text-decoration: underline
+	.btnLink
+		padding: 5px 20px
+	.icon-cross
+		position: absolute
+		right: 15px
+		top: 12px
+		border: none
+		background: none
+		color: $WHITEcolor
+	.form-control
+		margin-bottom: 22px
+		&+.has-error, &+.has-tips
+			position: absolute
+			top: 43px
+			margin-left: 5px
+			font-size: $font-size-sm
+		&+.has-tips
+			color: darken($WHITEcolor, 66%)
+	.tips
+		margin-bottom: 22px
+		line-height: $font-size-md
+#MsgAlert
+	position: fixed
+	top: 20%
+	left: 35%
+	width: 30%
+	+distanceMP(0 auto,10px 15px)
+	box-shadow: 0 4px 10px 2px rgba(51, 51, 102, 0.1)
+	text-align: center
+	background: white
+	z-index: 1010
+#Loading
+	position: fixed
+	top: calc(50% - 60px)
+	left: calc(50% - 100px)
+	z-index: 1010 + 1
+
+#AlertMsg
+	line-height: $font-size-md + 0.2em
